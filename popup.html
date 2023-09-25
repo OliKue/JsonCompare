@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div class="input-container" id="div1">
+      <label for="input1">Input 1:</label>
+      <textarea id="input1" required></textarea>
+    </div>
+    <div class="input-container" id="div2">
+      <label for="input2">Input 2:</label>
+      <textarea id="input2" required></textarea>
+    </div>
+    
+    <button id="compareButton">Compare Inputs</button>
+    <div class="modal" id="customAlert">
+      <div class="modal-content">
+        <pre id="isEqualText">Haven't compared yet.</pre>
+        <pre id="diffDisplay">Haven't compared yet.</pre>
+        <button id="closeAlert">OK</button>
+      </div>
+    </div>
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
